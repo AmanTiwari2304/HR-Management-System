@@ -1,5 +1,5 @@
 import axios from "axios";
-const isProduction = false; 
+const isProduction = true; 
 const api = axios.create({
     baseURL: isProduction ? hr-management-system-wine.vercel.app : "http://localhost:5000/api"
 });

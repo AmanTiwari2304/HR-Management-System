@@ -1,7 +1,7 @@
 import axios from "axios";
-
+const isProduction = false; 
 const api = axios.create({
-    baseURL: "http://localhost:5000/api",
+    baseURL: isProduction ? hr-management-system-wine.vercel.app : "http://localhost:5000/api"
 });
 
 // Attach token to every request

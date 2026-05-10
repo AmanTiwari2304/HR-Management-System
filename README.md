@@ -9,7 +9,7 @@ A full-stack Human Resource Management System built with the **MERN stack** (Mon
 > Add your deployed links here after hosting on  Vercel
 
 - **Frontend:** `https://your-app.vercel.app`
-- **Backend:** `https://your-api.vercel.com`
+- **Backend:** `hr-management-system-wine.vercel.app`
 
 ---
 
@@ -71,51 +71,3 @@ A full-stack Human Resource Management System built with the **MERN stack** (Mon
 | Deployment | Vercel|
 
 ---
-
-## 📁 Project Structure
-hr-system/
-├── backend/
-│   ├── server.js               # Entry point, DB connection
-│   ├── .env                    # Environment variables
-│   ├── middleware/
-│   │   └── auth.js             # JWT protect + adminOnly middleware
-│   ├── models/
-│   │   ├── User.js             # Auth user schema
-│   │   ├── Employee.js         # Employee profile schema
-│   │   ├── Attendance.js       # Attendance records schema
-│   │   └── Leave.js            # Leave requests schema
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── employeeController.js
-│   │   ├── attendanceController.js
-│   │   ├── leaveController.js
-│   │   └── dashboardController.js
-│   └── routes/
-│       ├── auth.js
-│       ├── employees.js
-│       ├── attendance.js
-│       ├── leaves.js
-│       └── dashboard.js
-└── frontend/
-├── src/
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── index.css
-│   ├── context/
-│   │   └── AuthContext.jsx  # Global auth state
-│   ├── utils/
-│   │   └── api.js           # Axios instance with interceptors
-│   ├── components/
-│   │   └── shared/
-│   │       ├── Layout.jsx
-│   │       ├── Navbar.jsx
-│   │       ├── Sidebar.jsx
-│   │       └── ProtectedRoute.jsx
-│   └── pages/
-│       ├── Login.jsx
-│       ├── Register.jsx
-│       ├── Dashboard.jsx
-│       ├── Employees.jsx
-│       ├── Attendance.jsx
-│       └── Leaves.jsx
-└── tailwind.config.js

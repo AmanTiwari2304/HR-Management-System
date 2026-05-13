@@ -1,7 +1,7 @@
 import axios from "axios";
-const isProduction = true; 
+
 const api = axios.create({
-    baseURL: isProduction ? "http://51.21.27.86:5000/api" : "http://localhost:5000/api"
+    baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api"
 });  
 
 // Attach token to every request
